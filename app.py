@@ -17,10 +17,10 @@ df['Tổng kết'] = round(df['Chuyên cần']*0.1 + df['Giữa kỳ']*0.3 + df[
 
 # Hàm xếp loại
 def xep_loai(diem):
-if diem >= 8.5: return 'Giỏi'
-elif diem >= 7.0: return 'Khá'
-elif diem >= 5.0: return 'Trung bình'
-else: return 'Yếu'
+      if diem >= 8.5: return 'Giỏi'
+      elif diem >= 7.0: return 'Khá'
+      elif diem >= 5.0: return 'Trung bình'
+      else: return 'Yếu'
 
 df['Xếp loại'] = df['Tổng kết'].apply(xep_loai)
 
