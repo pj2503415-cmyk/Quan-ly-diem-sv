@@ -39,15 +39,15 @@ st.subheader("2. Thống kê chung")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-diem_tb_lop = round(df['Tổng kết'].mean(), 2)
-st.metric(label="Điểm trung bình của lớp", value=diem_tb_lop)
+    diem_tb_lop = round(df['Tổng kết'].mean(), 2)
+    st.metric(label="Điểm trung bình của lớp", value=diem_tb_lop)
 
 with col2:
-so_sv_dat = len(df[df['Tổng kết'] >= 5.0])
-st.metric(label="Số sinh viên đạt (>= 5.0)", value=so_sv_dat)
+    so_sv_dat = len(df[df['Tổng kết'] >= 5.0])
+    st.metric(label="Số sinh viên đạt (>= 5.0)", value=so_sv_dat)
 
 with col3:
-st.metric(label="Tổng số sinh viên", value=len(df))
+    st.metric(label="Tổng số sinh viên", value=len(df))
 
 # Sinh viên cao nhất và thấp nhất
 sv_cao_nhat = df.loc[df['Tổng kết'].idxmax()]
