@@ -100,4 +100,4 @@ st.markdown(
 "Ứng dụng được tạo bởi: Nguyễn Văn A — MSSV: 12345678"
 "</p>",
 unsafe_allow_html=True
-
+)
